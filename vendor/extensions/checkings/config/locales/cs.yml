@@ -1,0 +1,80 @@
+cs:
+  refinery:
+    plugins:
+      checkings:
+        title: Checkings
+        description: Poskytuje kontaktní formulář a zaznamenáva checkings
+    checkings:
+      checkings:
+        new:
+          send: Odeslat zprávu
+          privacy_policy: Chráníme vaše soukromí
+      admin:
+        checkings:
+          checking:
+            delete_checking: Trvale odstranit checking
+            read_checking: Přečíst checking
+            said: řekl
+            mark_as_spam: Označit jako spam
+            mark_as_ham: Označit jako přečtené
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Upravit seznam notifikovaných
+            edit_confirmation_email: Upravit potvrzovací e-mail
+          index:
+            no_checkings: Zatím jste neobdrželi žádné checkings.
+          spam:
+            no_spam: Hurá! Nemáte žádný spam.
+          show:
+            details: Podrobnosti
+            age: Věk
+            actions: Akce
+            back_to_all_checkings: Zpět na všechny checkings
+            spam: Spam
+            spam_yes: 'ano'
+            checking: Checking
+            to: Komu
+            from: Od
+            click_to_email: Klikněte pro odeslání této adresy e-mailem
+            phone: Telefon
+            date: Datum
+            message: Zpráva
+        settings:
+          notification_recipients_form:
+            checking_settings_value_name: Zaslat upozornění pro
+            explanation: Pokaždé, když Vás někdo kontaktuje přes vaše webové stránky, Refinery odešle e-mail s upozorněním na nový checking.
+            hint: Když je odeslán nový checking, Refinery pošle upozornení na Váš e-mail.
+            example: "Zadejte e-mailové adresy jako: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: Komu
+            from: Od
+            subject: Předmet
+            click_to_edit_subject: Klikněte zde pro editaci předmetu
+            explanation: Když Vás někdo kontaktuje přes vaše webové stránky, Refinery odešle e-mail s potvrzením o přijetí odesílateli checking.
+            below_edit_email_sent: Níže můžete upravit e-mail, který je odeslán.
+            the_customer_making_checking: Klient delá checking
+            message: Zpráva
+            note: "Poznámka: umístěte text %name%, pro určení pozice jména klienta v e-maile"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_checking: You just received a new checking on your website.
+          checking_starts: --- checking starts ---
+          checking_ends: --- checking ends ---
+          from: Od
+          email: E-mail
+          phone: Telefon
+          message: Zpráva
+          closing_line: S pozdravem
+          ps_html: P.S. Všechny vaše checkings jsou uloženy pod záložkou "Checkings" v Refinery, pokud by jste je chtěli zobrazit pozdeji.
+  activerecord:
+    models:
+      checking: Checking
+    attributes:
+      checking:
+        first_name: First name
+        last_name: Last name
+        email: Email
+        phone: Phone
+        additional_comments: Additional comments

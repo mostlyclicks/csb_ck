@@ -1,0 +1,80 @@
+en:
+  refinery:
+    plugins:
+      checkings:
+        title: Checkings
+        description: Provides a contact form and stores checkings
+    checkings:
+      checkings:
+        new:
+          send: Send message
+          privacy_policy: We value your privacy
+      admin:
+        checkings:
+          checking:
+            read_checking: Read the checking
+            delete_checking: Remove this checking forever
+            said: said
+            mark_as_spam: Mark as spam
+            mark_as_ham: Move to inbox
+          submenu:
+            inbox: Inbox
+            spam: Spam
+            update_notified: Update who gets notified
+            edit_confirmation_email: Edit confirmation email
+          index:
+            no_checkings: You have not received any checkings yet.
+          spam:
+            no_spam: Hooray! You don't have any spam.
+          show:
+            details: Details
+            age: Age
+            actions: Actions
+            back_to_all_checkings: Back to all checkings
+            spam: Spam
+            spam_yes: 'yes'
+            checking: Checking
+            to: To
+            from: From
+            click_to_email: Click to email this address
+            phone: Phone
+            date: Date
+            message: Message
+        settings:
+          notification_recipients_form:
+            checking_settings_value_name: Send notifications to
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to say there is a new checking.
+            hint: When a new checking is submitted, Refinery will send an email notification to you.
+            example: "Enter your email address(es) like: jack@work.com, jill@office.com"
+          confirmation_email_form:
+            to: To
+            from: From
+            subject: Subject
+            click_to_edit_subject: Click here to edit the subject
+            explanation: Every time someone contacts you on your website, Refinery sends out an email to confirm the checking with the person who made it.
+            below_edit_email_sent: Below you can edit the email that is sent out.
+            the_customer_making_checking: The customer making the checking
+            message: Message
+            note: "Note: place the text %name% where you'd like the customer's name to appear in the email"
+      mailer:
+        notification:
+          greeting: Hi there
+          you_recieved_new_checking: You just received a new checking on your website.
+          checking_starts: --- checking starts ---
+          checking_ends: --- checking ends ---
+          from: From
+          email: Email
+          phone: Phone
+          message: Message
+          closing_line: Kind Regards
+          ps_html: P.S. All your checkings are stored in the "Checkings" section of Refinery should you ever want to view it later there.
+  activerecord:
+    models:
+      checking: Checking
+    attributes:
+      checking:
+        first_name: First name
+        last_name: Last name
+        email: Email
+        phone: Phone
+        additional_comments: Additional comments
