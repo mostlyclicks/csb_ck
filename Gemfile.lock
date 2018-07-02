@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/refinery/refinerycms-forms
+  revision: 496d3ce44f8ae7a16139484ad3e7013ca6025f66
+  branch: master
+  specs:
+    refinerycms-forms (2.0.0)
+      refinerycms-core (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -334,6 +342,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 3.0, >= 3.0.0)
   refinerycms-authentication-devise (~> 2.0.0)
   refinerycms-core
+  refinerycms-forms!
   refinerycms-images
   refinerycms-pages
   refinerycms-resources

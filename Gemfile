@@ -23,6 +23,7 @@ gem 'bootstrap', '~> 4.1.1'
 gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'jquery-rails'
 
+
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -70,3 +71,5 @@ gem 'refinerycms-acts-as-indexed', ['~> 3.0', '>= 3.0.0']
 gem 'refinerycms-wymeditor', ['~> 2.0', '>= 2.0.0']
 
 gem 'refinerycms-authentication-devise', '~> 2.0.0'
+
+gem 'refinerycms-forms', git: 'https://github.com/refinery/refinerycms-forms', branch: 'master', group: :development
