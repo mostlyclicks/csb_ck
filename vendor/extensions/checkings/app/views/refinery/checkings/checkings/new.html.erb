@@ -1,5 +1,25 @@
-<% content_for :body do %>
-  <div class='checkings'>
+
+<section id="smiley-face">
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <%= image_tag 'Get-More-Logo.png', class: 'img-fluid' %>
+    </div>
+  </div>
+
+  <div class="row">  
+    <div class="col-md-7"></div>
+    <div class="col-md-5">
+      <div id="bubble">
+        <p class="lead">Do you want more money in your pocket???<br /><br />
+        Lean how to put hundreds to thousands of $$$ back into your pocket each year!</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7"></div>
+    <div class="col-md-5">
+    <div class='checkings'>
     <%=raw @page.content_for(Refinery::Pages.default_parts.first[:slug].to_sym) %>
 
     <%= form_for [refinery, :checkings, @checking] do |f| %>
@@ -7,35 +27,38 @@
                  :object => @checking,
                  :include_object_name => true  %>
 
-      <div class='field first_name_field string_field'>
-        <%= f.label :first_name %>
-        <%= f.text_field :first_name %>
+      <div class='field first_name_field string_field form-group'>
+        <%= f.label :first_name, class: 'invisible' %>
+        <%= f.text_field :first_name, placeholder: 'First Name', class: 'form-control' %>
       </div>
 
-      <div class='field last_name_field string_field'>
-        <%= f.label :last_name %>
-        <%= f.text_field :last_name %>
+      <div class='field last_name_field string_field form-group'>
+        <%= f.label :last_name, class: 'invisible'  %>
+        <%= f.text_field :last_name,  placeholder: 'Last Name', class: 'form-control' %>
       </div>
 
-      <div class='field email_field string_field'>
-        <%= f.label :email %>
-        <%= f.text_field :email %>
+      <div class='field email_field string_field form-group'>
+        <%= f.label :email, class: 'invisible'  %>
+        <%= f.text_field :email, placeholder: 'Email',  class: 'form-control' %>
       </div>
 
-      <div class='field phone_field string_field'>
-        <%= f.label :phone %>
-        <%= f.text_field :phone %>
+      <div class='field phone_field string_field form-group'>
+        <%= f.label :phone, class: 'invisible'  %>
+        <%= f.text_field :phone, placeholder: 'Phone',  class: 'form-control' %>
       </div>
 
-      <div class='field additional_comments_field text_field'>
-        <%= f.label :additional_comments %>
-        <%= f.text_area :additional_comments, :rows => 8 %>
+      <div class='field additional_comments_field text_field form-group'>
+        <%= f.label :additional_comments, class: 'invisible'  %>
+        <%= f.text_area :additional_comments, placeholder: 'Additional comments...',  :rows => 5, class: 'form-control' %>
       </div>
 
       <div class='actions'>
-        <%= f.submit t('.send') %>
+        <%= f.submit ('Send me more info'), class: 'btn btn-lg btn-danger' %>
       </div>
     <% end %>
   </div>
-<% end %>
-<%= render '/refinery/content_page' %>
+    </div>
+  </div>
+</div>
+</section>
+ 
