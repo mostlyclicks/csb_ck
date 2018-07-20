@@ -6,8 +6,9 @@ Rails.application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
   
-  
+  root :to => 'refinery/checkings/checkings#new'
   mount Refinery::Core::Engine, at: Refinery::Core.mounted_path
+
 
   
 
