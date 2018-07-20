@@ -4,7 +4,7 @@ module Refinery
 
       def confirmation(checking, request)
         @checking = checking
-        mail :subject  => Refinery::Checkings::Setting.confirmation_subject,
+        mail :subject  => Refinery::Checkings::Setting.confirmation_subject[locale.to_s],
              :to       => checking.email,
              :from     => "\"#{Refinery::Core.site_name}\" <no-reply@#{request.domain}>",
              :reply_to => Refinery::Checkings::Setting.notification_recipients.split(',').first
