@@ -2,7 +2,7 @@
 <br/>
 You have recieved a new form submission from GetMoreChecking.com.
 <br/>
-<%= t('.form_starts') %><br/>
+== FORM STARTS ================<br/>
 <br/>
 <%= t('.first_name', :default => t('activerecord.attributes.checking.first_name')) %>: <%= @checking.first_name %><br/>
 <%= t('.last_name', :default => t('activerecord.attributes.checking.last_name')) %>: <%= @checking.last_name %><br/>
@@ -10,8 +10,8 @@ You have recieved a new form submission from GetMoreChecking.com.
 <%= t('.phone', :default => t('activerecord.attributes.checking.phone')) %>: <%= @checking.phone %><br/>
 <%= t('.additional_comments', :default => t('activerecord.attributes.checking.additional_comments')) %>: 
 <%= @checking.additional_comments %>
-<br/>
-<%= t('.form_ends') %><br/>
+<br/><br/>
+== FORM ENDS ================<br/>
 <br/>
 <%= t('.closing_line') %>,<br/>
 <%= Refinery::Core.site_name %><br/>
