@@ -3,18 +3,36 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) { 
+	body {border-top:5px solid red;}
+	#smiley-face {margin-top:20px;}
 
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+	body {border-top:5px solid blue;}
+	#smiley-face {
+		background-position:-350px 0px;
+		
+	}	
 
+	#thank-you-message {
+		margin-top:150px;
+		padding-right:100px;
+		margin-top:20px;
+	}
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+	body {border-top:5px solid orange;}
 	#smiley-face {
 		background-position:  -200px 0;
+	}
+	#thank-you-message {
+		margin-top:150px;
+		padding-right:0px;
+
 	}
 	#bubble {
 	margin-top:-50px;
@@ -24,5 +42,6 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+	body {border-top:5px solid green;}
 
 }

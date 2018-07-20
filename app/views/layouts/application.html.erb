@@ -14,15 +14,22 @@
       <main id="page" role="main">
 
 
-        <div class="container">
+        
           <%= yield %>
-        </div>
+        
 
 
 
       </main>
       <footer role="contentinfo">
-        <%= render "/refinery/footer" -%>
+        <div class="container" >
+          <div class="row">
+            <div class="col-md-12" id="footer">
+              <%= render "/refinery/footer" -%>    
+            </div>
+          </div>
+        </div>
+        
       </footer>
     </div>
   </body>

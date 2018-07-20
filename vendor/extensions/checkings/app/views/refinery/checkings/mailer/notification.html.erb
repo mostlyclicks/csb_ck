@@ -1,8 +1,8 @@
 <%= t('.greeting') %>,<br/>
 <br/>
-<%= t('.you_recieved_new_checking') %><br/>
+You have recieved a new form submission from GetMoreChecking.com.
 <br/>
-<%= t('.checking_starts') %><br/>
+<%= t('.form_starts') %><br/>
 <br/>
 <%= t('.first_name', :default => t('activerecord.attributes.checking.first_name')) %>: <%= @checking.first_name %><br/>
 <%= t('.last_name', :default => t('activerecord.attributes.checking.last_name')) %>: <%= @checking.last_name %><br/>
@@ -11,7 +11,7 @@
 <%= t('.additional_comments', :default => t('activerecord.attributes.checking.additional_comments')) %>: 
 <%= @checking.additional_comments %>
 <br/>
-<%= t('.checking_ends') %><br/>
+<%= t('.form_ends') %><br/>
 <br/>
 <%= t('.closing_line') %>,<br/>
 <%= Refinery::Core.site_name %><br/>

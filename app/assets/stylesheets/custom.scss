@@ -1,12 +1,33 @@
 #smiley-face {
+	
 	background-image:url(/assets/Emoji-Person-2.jpg);
 	background-size: cover;
 	padding:40px 40px;
 	background-repeat: no-repeat;
 	background-position:  -790px 0px;
+
+}
+
+#smiley-face-thankyou {
+	background-image:url(/assets/Emoji-Person-2.jpg);
+	background-size: cover;
+	padding:40px 40px;
+	background-repeat: no-repeat;
+	background-position: -250px 0px;
+	height:100vh;
+	width:100%;
+	
+}
+
+#thank-you-message {
+	margin-top:100px;
 }
 
 #bubble {
+	padding-top:50px;
+}
+
+/*#bubble {
 	background-image:url(/assets/Speech-Bubble---Narrow.png);
 	padding:20px 20px 40px 50px;
 	background-size: 100%;
@@ -20,7 +41,7 @@
 		font-weight:700;
 		font-size:99%;
 	}
-}
+}*/
 
 .checkings {
 	label {
@@ -29,4 +50,17 @@
 		/*color:#31903a;*/
 
 	}
+}
+
+footer {
+	padding:0px 40px;
+	
+}
+
+#footer {
+	padding:20px 20px;
+	background-color:rgba(200,200,200, .2);
+	color:rgba(100,100,100, .4);
+	text-align: center;
+
 }
