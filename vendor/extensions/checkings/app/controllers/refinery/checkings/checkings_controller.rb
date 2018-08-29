@@ -5,7 +5,7 @@ module Refinery
       before_action :find_page, :only => [:create, :new]
 
       def index
-        redirect_to refinery.new_checkings_checking_path
+        redirect_to refinery.new_checkings_checkings_path
       end
 
       def thank_you
@@ -19,7 +19,7 @@ module Refinery
       def create
         @checking = Checking.new(checking_params)
 
-        if @checking.save
+        if verify_recaptcha(model: @checking) && @checking.save
           begin
             Mailer.notification(@checking, request).deliver_now
           rescue => e

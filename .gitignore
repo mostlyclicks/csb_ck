@@ -13,6 +13,8 @@
 !/log/.keep
 !/tmp/.keep
 
+Vagrantfile
+
 /node_modules
 /yarn-error.log
 
